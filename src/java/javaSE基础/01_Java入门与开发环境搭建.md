@@ -27,7 +27,7 @@ star: true
 #copyright: 无版权
 ---
 
-[//]: # (<LockArticle :highHeightPercent="0.05"/>)
+<LockArticle :highHeightPercent="0.05"/>
 
 # Java入门与开发环境搭建
 

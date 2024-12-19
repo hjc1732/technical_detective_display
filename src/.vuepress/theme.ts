@@ -86,11 +86,11 @@ export default hopeTheme({
     // search: true,
     // searchPro: true,
 
-    // docsearch:{
-      // appId:'XS8QWY72OI',
-      // apiKey:'3bd4eac3260d35013638e91de1d1986b',
-      // indexName:'hjcwzx',
-    // },
+    docsearch:{
+      appId:'XS8QWY72OI',
+      apiKey:'3bd4eac3260d35013638e91de1d1986b',
+      indexName:'hjcwzx',
+    },
 
     // markdownMath: {
     //   // 启用前安装 katex

@@ -2,15 +2,60 @@
 ## 资料引用
 > **okhttp**
 > 
-> [okHttp学习-Bilibili](https://www.bilibili.com/video/BV1C44y1f7vP/?spm_id_from=333.337.search-card.all.click&vd_source=1138c9182cfae312f30e6b30a5429b05)
->
-> [okHttp学习-CSDN](https://blog.csdn.net/weixin_45648614/article/details/104381825?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-0-104381825-blog-125157816.235^v43^pc_blog_bottom_relevance_base8&spm=1001.2101.3001.4242.1&utm_relevant_index=3)
->
-> [Okhttp3基本使用](https://www.jianshu.com/p/da4a806e599b)
->
-> [Okhttp3源码分析](https://www.jianshu.com/p/b0353ed71151)
->
-> [OkHttp3架构分析](https://www.jianshu.com/p/9deec36f2759)
+```component VPCard
+title: okHttp学习-Bilibili
+desc: 哔哩哔哩
+logo: https://www.hjcwzx.top/logo.png
+link: https://www.bilibili.com/video/BV1C44y1f7vP/?spm_id_from=333.337.search-card.all.click&vd_source=1138c9182cfae312f30e6b30a5429b05
+background: rgba(253, 230, 138, 0.15)
+```
+```component VPCard
+title: okHttp学习-CSDN
+desc: CSDN
+logo: https://www.hjcwzx.top/logo.png
+link: https://blog.csdn.net/weixin_45648614/article/details/104381825?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-0-104381825-blog-125157816.235^v43^pc_blog_bottom_relevance_base8&spm=1001.2101.3001.4242.1&utm_relevant_index=3
+background: rgba(253, 230, 138, 0.15)
+```
+```component VPCard
+title: Okhttp3基本使用
+desc: 简书
+logo: https://www.hjcwzx.top/logo.png
+link: https://www.jianshu.com/p/da4a806e599b
+background: rgba(253, 230, 138, 0.15)
+```
+```component VPCard
+title: Okhttp3源码分析
+desc: 简书
+logo: https://www.hjcwzx.top/logo.png
+link: https://www.jianshu.com/p/b0353ed71151
+background: rgba(253, 230, 138, 0.15)
+```
+
+```component VPCard
+title: OkHttp3架构分析
+desc: 简书
+logo: https://www.hjcwzx.top/logo.png
+link: https://www.jianshu.com/p/9deec36f2759
+background: rgba(253, 230, 138, 0.15)
+```
+
+[//]: # (> [okHttp学习-Bilibili]&#40;https://www.bilibili.com/video/BV1C44y1f7vP/?spm_id_from=333.337.search-card.all.click&vd_source=1138c9182cfae312f30e6b30a5429b05&#41;)
+
+[//]: # (>)
+
+[//]: # (> [okHttp学习-CSDN]&#40;https://blog.csdn.net/weixin_45648614/article/details/104381825?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_utm_term~default-0-104381825-blog-125157816.235^v43^pc_blog_bottom_relevance_base8&spm=1001.2101.3001.4242.1&utm_relevant_index=3&#41;)
+
+[//]: # (>)
+
+[//]: # (> [Okhttp3基本使用]&#40;https://www.jianshu.com/p/da4a806e599b&#41;)
+
+[//]: # (>)
+
+[//]: # (> [Okhttp3源码分析]&#40;https://www.jianshu.com/p/b0353ed71151&#41;)
+
+[//]: # (>)
+
+[//]: # (> [OkHttp3架构分析]&#40;https://www.jianshu.com/p/9deec36f2759&#41;)
 
 > **Retrofit2**
 > 
