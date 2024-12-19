@@ -3,60 +3,11 @@ import { navbar } from "vuepress-theme-hope";
 export default navbar([
   "/",
   // "/portfolio",
-  // "/demo/",
-  // {
-  //   text: "指南",
-  //   icon: "lightbulb",
-  //   prefix: "/guide/",
-  //   children: [
-  //     {
-  //       text: "Bar",
-  //       icon: "lightbulb",
-  //       prefix: "bar/",
-  //       children: ["baz", { text: "...", icon: "ellipsis", link: "" }],
-  //     },
-  //     {
-  //       text: "Foo",
-  //       icon: "lightbulb",
-  //       prefix: "foo/",
-  //       children: ["ray", { text: "...", icon: "ellipsis", link: "" }],
-  //     },
-  //   ],
-  // },
   {
     text: '基础',
-    // icon: "lightbulb",
-    children: [
-      // {text: 'javaSE', link: "/java/javaSE基础/01_Java入门与开发环境搭建"},
-      {text: 'java', children:[
-          {text: 'javaSE', link: "/java/javaSE基础/01_Java入门与开发环境搭建"},
-          {text: 'javaWeb', link: "/java/javaWeb/01_Web开发基础"},
-          {text: 'JUC', link: "/java/JUC/1、JUC概述"},
-          {text: '响应式编程', link: "/java/响应式编程/前置知识"},
-          {text: '设计模式', link: "/设计模式/概述/概述"},
-          {text: '日志', link: "/java/日志/1_日志简介"},
-        ]},
-      // {text: '数据库', link: "/db/mysql/Mysql基础/01_MySQL概述"},
-      {text: '数据库', children:[
-          {text: 'jdbc', link: "/db/jdbc/01_JDBC"},
-          {text: 'mysql', link: "/db/mysql/Mysql基础/01_MySQL概述"},
-        ]},
-      {text: '补充',
-        children: [
-          {text: 'Retrofit2', link: "/java/补充/Retrofit2"},
-          {text: 'rxJava', link: "/java/补充/rxJava/rxJava"},
-          {text: 'lua', link: "/java/补充/lua"},
-          {text: 'jvm', link: "/java/补充/JVM"},
-          {text: '枚举', link: "/java/补充/枚举"},
-          {text: '线程池', link: "/java/补充/线程池"},
-          {text: '自定义注解', link: "/java/补充/自定义注解"},
-        ]},
-      {text: '前端',
-        children: [
-          {text: '前端基础', link: "/前端/前端基础/01_HTML"},
-          {text: 'vue', link: "/前端/vue/01_ECMAScript6入门"},
-        ]},
-    ]
+    link: "/base/java/javaSE基础/01_Java入门与开发环境搭建",
+    icon: "lightbulb",
+    activeMatch: "^/base/",
   },
   {
     text: '框架',
@@ -85,7 +36,43 @@ export default navbar([
   },
   {text: '中间件 | 自研轮子', link: "/中间件/ElasticSearch/ElasticSearch"},
   {text: '部署|运维', link: "/部署/linux/01_Linux_安装"},
+  {text: '架构学习', link: "/架构"},
   {text: '更新日志', link: "/更新日志/更新日志.md"},
+  // {
+  //   text: '基础',
+  //   // icon: "lightbulb",
+  //   children: [
+  //     // {text: 'javaSE', link: "/java/javaSE基础/01_Java入门与开发环境搭建"},
+  //     {text: 'java', children:[
+  //         {text: 'javaSE', link: "/java/javaSE基础/01_Java入门与开发环境搭建"},
+  //         {text: 'javaWeb', link: "/java/javaWeb/01_Web开发基础"},
+  //         {text: 'JUC', link: "/java/JUC/1、JUC概述"},
+  //         {text: '响应式编程', link: "/java/响应式编程/前置知识"},
+  //         {text: '设计模式', link: "/设计模式/概述/概述"},
+  //         {text: '日志', link: "/java/日志/1_日志简介"},
+  //       ]},
+  //     // {text: '数据库', link: "/db/mysql/Mysql基础/01_MySQL概述"},
+  //     {text: '数据库', children:[
+  //         {text: 'jdbc', link: "/db/jdbc/01_JDBC"},
+  //         {text: 'mysql', link: "/db/mysql/Mysql基础/01_MySQL概述"},
+  //       ]},
+  //     {text: '补充',
+  //       children: [
+  //         {text: 'Retrofit2', link: "/java/补充/Retrofit2"},
+  //         {text: 'rxJava', link: "/java/补充/rxJava/rxJava"},
+  //         {text: 'lua', link: "/java/补充/lua"},
+  //         {text: 'jvm', link: "/java/补充/JVM"},
+  //         {text: '枚举', link: "/java/补充/枚举"},
+  //         {text: '线程池', link: "/java/补充/线程池"},
+  //         {text: '自定义注解', link: "/java/补充/自定义注解"},
+  //       ]},
+  //     {text: '前端',
+  //       children: [
+  //         {text: '前端基础', link: "/前端/前端基础/01_HTML"},
+  //         {text: 'vue', link: "/前端/vue/01_ECMAScript6入门"},
+  //       ]},
+  //   ]
+  // },
   //     children: [
   // {text: '中间件',
   //         {text: '官方中间件', link: "/中间件/ElasticSearch/ElasticSearch"},

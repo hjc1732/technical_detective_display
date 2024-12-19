@@ -11,69 +11,194 @@ export default sidebar({
   '/框架/Spring全家桶/SpringMVC/':getSpringMVCBar(),
   '/框架/Spring全家桶/Spring/':getSpringBar(),
   '/框架/Mybatis/':getMyBatisBar(),
-  '/前端/vue/':getVueBar(),
-  '/前端/前端基础/':getQianDuanBar(),
-  '/java/日志/': getLoggingBar(),
-  '/java/JUC/': getJUCBar(),
-  '/java/响应式编程/': getReactorBar(),
-  '/java/javaWeb/': getJavaWebBar(),
-  '/java/补充/': getBuChongBar(),
-  '/java/': getJavaBar(),
-  '/db/jdbc/': getDBJdbcBar(),
-  '/db/mysql/': getDBMysqlBar(),
+  // '/前端/vue/':getVueBar(),
+  // '/前端/前端基础/':getQianDuanBar(),
+  // '/java/日志/': getLoggingBar(),
+  // '/java/JUC/': getJUCBar(),
+  // '/java/响应式编程/': getReactorBar(),
+  // '/java/javaWeb/': getJavaWebBar(),
+  // '/java/补充/': getBuChongBar(),
+  '/base/': getBaseBar(),
+  // '/db/jdbc/': getDBJdbcBar(),
+  // '/db/mysql/': getDBMysqlBar(),
   // '/中间件/自定义Starter/':getStarterBar(),
   '/中间件/':getMiddleBar(),
   '/实验/':getShiYanBar(),
   '/设计模式/':getDesign(),
 });
 
-
-
-
-
-function getBuChongBar() {
+function getBaseBar() {
   return [
     {
-      text: '补充',
-      collapsible: false,
+      text: 'Java',
+      collapsible: true,
       children: [
-        'Retrofit2',
-        'rxJava/rxJava',
-        'lua',
-        'JVM',
-        '枚举',
-        '线程池',
-        '自定义注解'
+        {
+          text: 'JavaSE基础',
+          collapsible: true,
+          expanded: false,
+          children: [
+            'java/javaSE基础/01_Java入门与开发环境搭建',
+            'java/javaSE基础/02_Java语言基础',
+            'java/javaSE基础/03_控制流程',
+            'java/javaSE基础/04_方法',
+            'java/javaSE基础/05_数组',
+            'java/javaSE基础/06_面向对象基础',
+            'java/javaSE基础/07_面向对象三大特征',
+            'java/javaSE基础/08_三个修饰符',
+            'java/javaSE基础/09_接口和内部类',
+            'java/javaSE基础/10_常用类',
+            'java/javaSE基础/11_集合',
+            'java/javaSE基础/12_异常',
+          ]
+        },
+        {
+          text: 'JavaSE高级',
+          collapsible: true,
+          children: [
+            'java/JavaSE高级/01_IO',
+            'java/JavaSE高级/02_多线程',
+            'java/JavaSE高级/03_网络编程',
+            'java/JavaSE高级/04_反射',
+            'java/JavaSE高级/05_Java8新特性',
+          ]
+        },
+        {
+          text: 'JavaSE补充',
+          collapsible: true,
+          children: [
+            'java/补充/Retrofit2',
+            'java/补充/rxJava/rxJava',
+            'java/补充/lua',
+            'java/补充/JVM',
+            'java/补充/枚举',
+            'java/补充/线程池',
+            'java/补充/自定义注解'
+          ]
+        },
+        {
+          text: 'JavaWeb',
+          collapsible: true,
+          children: [
+            'java/javaWeb/01_Web开发基础',
+            'java/javaWeb/02_Servlet',
+            'java/javaWeb/03_JSP入门_Cookie_Session',
+            'java/javaWeb/04_JSP进阶_EL_JSTL',
+            'java/javaWeb/05_Filter',
+            'java/javaWeb/06_文件上传',
+          ]
+        },
+        {
+          text: '响应式编程',
+          collapsible: true,
+          children: [
+            'java/响应式编程/前置知识',
+            'java/响应式编程/Reactor',
+          ]
+        },
+        {
+          text: 'JUC',
+          collapsible: true,
+          children: [
+            'java/JUC/1、JUC概述',
+            'java/JUC/2、Lock接口',
+            'java/JUC/3、线程间通讯与线程间定制化通讯',
+            'java/JUC/4、集合的线程不安全问题',
+            'java/JUC/5、多线程锁',
+            'java/JUC/6、callable接口',
+            'java/JUC/7、JUC中强大的辅助类',
+          ]
+        },
+        {
+          text: '日志',
+          collapsible: true,
+          children: [
+            'java/日志/1_日志简介',
+            'java/日志/2_JUL',
+            'java/日志/3_log4j',
+            'java/日志/4_JCL',
+            'java/日志/5_SLF4J',
+            'java/日志/6_Logback',
+            'java/日志/7_Log4j2',
+            'java/日志/8_springboot日志实现',
+          ]
+        },
       ]
-    }
-  ]
-}
-
-function getJUCBar() {
-  return [
+    },
     {
-      text: 'JUC并发编程',
-      collapsible: false,
+      text: '数据库',
+      collapsible: true,
       children: [
-        '1、JUC概述',
-        '2、Lock接口',
-        '3、线程间通讯与线程间定制化通讯',
-        '4、集合的线程不安全问题',
-        '5、多线程锁',
-        '6、callable接口',
-        '7、JUC中强大的辅助类',
+        {
+          text: 'JDBC',
+          collapsible: true,
+          children: [
+            'db/jdbc/01_JDBC',
+            'db/jdbc/02_数据库连接池',
+            'db/jdbc/03_事务',
+            'db/jdbc/04_Commons_DbUtils'
+          ]
+        },
+        {
+          text: 'MYSQL',
+          collapsible: true,
+          children: [
+            {
+              text: '基础',
+              collapsible: true,
+              children: [
+                'db/mysql/Mysql基础/01_MySQL概述',
+                'db/mysql/Mysql基础/02_MySQL安装及配置',
+                'db/mysql/Mysql基础/03_MySQL客户端工具',
+                'db/mysql/Mysql基础/04_SQL概述及DDL',
+                'db/mysql/Mysql基础/05_DML',
+                'db/mysql/Mysql基础/06_约束',
+                'db/mysql/Mysql基础/07_DQL',
+                'db/mysql/Mysql基础/08_DCL',
+                'db/mysql/Mysql基础/09_TPL',
+                'db/mysql/Mysql基础/10_视图',
+                'db/mysql/Mysql基础/11_常用函数',
+                'db/mysql/Mysql基础/12_变量_存储过程_函数',
+              ]
+            },
+            {
+              text: '高级',
+              collapsible: true,
+              children: [
+                'db/mysql/Mysql高级/Mysql高级篇-索引优化',
+              ]
+            }
+          ]
+        }
       ]
-    }
-  ]
-}
-function getReactorBar() {
-  return [
+    },
     {
-      text: 'Springboot3响应式编程',
-      collapsible: false,
+      text: '前端',
+      collapsible: true,
       children: [
-        '前置知识',
-        'Reactor',
+        {
+          text: '前端基础',
+          collapsible: true,
+          children: [
+            '前端/前端基础/01_HTML',
+            '前端/前端基础/02_CSS',
+            '前端/前端基础/03_JavaScript',
+            '前端/前端基础/04_jQuery',
+            '前端/前端基础/05_BootStrap',
+            '前端/前端基础/06_Ajax_JSON'
+          ]
+        },
+        {
+          text: 'Vue',
+          collapsible: true,
+          children: [
+            '前端/vue/01_ECMAScript6入门',
+            '前端/vue/02_Vue入门',
+            "前端/vue/03_Vue进阶",
+            "前端/vue/04_锋迷Wiki实战项目",
+            "前端/vue/锋迷项目梳理",
+          ]
+        }
       ]
     }
   ]
@@ -416,119 +541,6 @@ function getQianDuanBar() {
     }
   ]
 }
-function getDBJdbcBar() {
-  return [
-    {
-      text: 'JDBC',
-      collapsible: false,
-      children: [
-        '01_JDBC',
-        '02_数据库连接池',
-        '03_事务',
-        '04_Commons_DbUtils'
-      ]
-    }
-  ]
-}
-function getJavaWebBar() {
-  return [
-    {
-      text: 'javaWeb',
-      collapsible: false,
-      children: [
-        '01_Web开发基础',
-        '02_Servlet',
-        '03_JSP入门_Cookie_Session',
-        '04_JSP进阶_EL_JSTL',
-        '05_Filter',
-        '06_文件上传',
-      ]
-    }
-  ]
-}
-function getJavaBar() {
-  return [
-    {
-      text: 'javaSE基础',
-      collapsible: false,
-      children: [
-        'javaSE基础/01_Java入门与开发环境搭建',
-        'javaSE基础/02_Java语言基础',
-        'javaSE基础/03_控制流程',
-        'javaSE基础/04_方法',
-        'javaSE基础/05_数组',
-        'javaSE基础/06_面向对象基础',
-        'javaSE基础/07_面向对象三大特征',
-        'javaSE基础/08_三个修饰符',
-        'javaSE基础/09_接口和内部类',
-        'javaSE基础/10_常用类',
-        'javaSE基础/11_集合',
-        'javaSE基础/12_异常',
-      ]
-    },
-    {
-      text: 'JavaSE高级',
-      collapsible: false,
-      children: [
-        'JavaSE高级/01_IO',
-        'JavaSE高级/02_多线程',
-        'JavaSE高级/03_网络编程',
-        'JavaSE高级/04_反射',
-        'JavaSE高级/05_Java8新特性',
-      ]
-    }
-  ]
-}
-function getDBMysqlBar() {
-  return [
-    {
-      text: 'mysql基础',
-      collapsible: false,
-      children: [
-        'Mysql基础/01_MySQL概述',
-        'Mysql基础/02_MySQL安装及配置',
-        'Mysql基础/03_MySQL客户端工具',
-        'Mysql基础/04_SQL概述及DDL',
-        'Mysql基础/05_DML',
-        'Mysql基础/06_约束',
-        'Mysql基础/07_DQL',
-        'Mysql基础/08_DCL',
-        'Mysql基础/09_TPL',
-        'Mysql基础/10_视图',
-        'Mysql基础/11_常用函数',
-        'Mysql基础/12_变量_存储过程_函数',
-      ]
-    },
-    {
-      text: 'mysql高级',
-      collapsible: false,
-      children: [
-        'Mysql高级/Mysql高级篇-索引优化',
-      ]
-    }
-  ]
-}
-
-function getStarterBar() {
-  return [
-    {
-      text: '自定义starter',
-      collapsible: false,
-      children: [
-        '自定义starter',
-        '白名单过滤starter',
-      ]
-    },
-    {
-      text: '上传maven中央仓库',
-      collapsible: false,
-      children: [
-        '上传中央仓库',
-      ]
-    }
-  ]
-}
-
 function getMiddleBar() {
   // return [
   //     {
@@ -618,7 +630,6 @@ function getMiddleBar() {
     }
   ]
 }
-
 function getShiYanBar() {
   return [
     {
@@ -631,11 +642,130 @@ function getShiYanBar() {
     }
   ]
 }
-
-
-
-
-
+function getDBMysqlBar() {
+  return [
+    {
+      text: 'mysql基础',
+      collapsible: false,
+      children: [
+        'Mysql基础/01_MySQL概述',
+        'Mysql基础/02_MySQL安装及配置',
+        'Mysql基础/03_MySQL客户端工具',
+        'Mysql基础/04_SQL概述及DDL',
+        'Mysql基础/05_DML',
+        'Mysql基础/06_约束',
+        'Mysql基础/07_DQL',
+        'Mysql基础/08_DCL',
+        'Mysql基础/09_TPL',
+        'Mysql基础/10_视图',
+        'Mysql基础/11_常用函数',
+        'Mysql基础/12_变量_存储过程_函数',
+      ]
+    },
+    {
+      text: 'mysql高级',
+      collapsible: false,
+      children: [
+        'Mysql高级/Mysql高级篇-索引优化',
+      ]
+    }
+  ]
+}
+function getStarterBar() {
+  return [
+    {
+      text: '自定义starter',
+      collapsible: false,
+      children: [
+        '自定义starter',
+        '白名单过滤starter',
+      ]
+    },
+    {
+      text: '上传maven中央仓库',
+      collapsible: false,
+      children: [
+        '上传中央仓库',
+      ]
+    }
+  ]
+}
+function getDBJdbcBar() {
+  return [
+    {
+      text: 'JDBC',
+      collapsible: false,
+      children: [
+        '01_JDBC',
+        '02_数据库连接池',
+        '03_事务',
+        '04_Commons_DbUtils'
+      ]
+    }
+  ]
+}
+function getJavaWebBar() {
+  return [
+    {
+      text: 'javaWeb',
+      collapsible: false,
+      children: [
+        '01_Web开发基础',
+        '02_Servlet',
+        '03_JSP入门_Cookie_Session',
+        '04_JSP进阶_EL_JSTL',
+        '05_Filter',
+        '06_文件上传',
+      ]
+    }
+  ]
+}
+function getBuChongBar() {
+  return [
+    {
+      text: '补充',
+      collapsible: false,
+      children: [
+        'Retrofit2',
+        'rxJava/rxJava',
+        'lua',
+        'JVM',
+        '枚举',
+        '线程池',
+        '自定义注解'
+      ]
+    }
+  ]
+}
+function getJUCBar() {
+  return [
+    {
+      text: 'JUC并发编程',
+      collapsible: false,
+      children: [
+        '1、JUC概述',
+        '2、Lock接口',
+        '3、线程间通讯与线程间定制化通讯',
+        '4、集合的线程不安全问题',
+        '5、多线程锁',
+        '6、callable接口',
+        '7、JUC中强大的辅助类',
+      ]
+    }
+  ]
+}
+function getReactorBar() {
+  return [
+    {
+      text: 'Springboot3响应式编程',
+      collapsible: false,
+      children: [
+        '前置知识',
+        'Reactor',
+      ]
+    }
+  ]
+}
 const old = {
   "/": [
     "",
