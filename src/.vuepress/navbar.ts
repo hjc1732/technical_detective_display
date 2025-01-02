@@ -4,39 +4,13 @@ export default navbar([
   "/",
   // "/portfolio",
   {
-    text: '基础',
-    link: "/base/java/javaSE基础/01_Java入门与开发环境搭建",
+    text: '编程路书',
+    link: "/road-map/components/",
     icon: "lightbulb",
-    activeMatch: "^/base/",
+    activeMatch: "^/road-map/",
   },
-  {
-    text: '框架',
-    children: [
-      {text: '架构',
-        children: [
-          {text: '项目搭建', link: "/框架/架构/项目搭建/项目搭建"},
-          {text: 'DDD', link: "/框架/架构/DDD架构/01-ddd是什么"},
-        ]
-      },
-      {text: 'ORM',
-        children: [
-          {text: 'Mybatis', link: "/框架/Mybatis/01_MyBatis快速入门"},
-        ]
-      },
-      {text: 'Spring全家桶',
-        children: [
-          {text: 'Spring', link: "/框架/Spring全家桶/Spring/01_SpringIOC和DI"},
-          {text: 'SpringMVC', link: "/框架/Spring全家桶/SpringMVC/01_SpringMVC快速入门及解析"},
-          {text: 'SpringBoot', link: "/框架/Spring全家桶/SpringBoot/01_SpringBoot_入门"},
-          {text: 'SpringSecurity', link: "/框架/Spring全家桶/SpringSecurity/SpringSecurity"},
-          {text: 'SpringCloudAlibaba', link: "/框架/Spring全家桶/SpringCloudAlibaba/Nacos"},
-        ]
-      },
-    ]
-  },
-  {text: '中间件 | 自研轮子', link: "/中间件/ElasticSearch/ElasticSearch"},
-  {text: '部署|运维', link: "/部署/linux/01_Linux_安装"},
-  {text: '架构学习', link: "/架构"},
+  {text: '部署|运维', link: "/deploy-maintenance/elk/使用docker搭建ELK"},
+  {text: '项目合集', link: "/projects/self-develop-component/自定义starter"},
   {text: '更新日志', link: "/更新日志/更新日志.md"},
   // {
   //   text: '基础',
@@ -108,5 +82,30 @@ export default navbar([
   //         },
   //
   //     ]
-  // }
+  // },
+  // {
+  //   text: '框架',
+  //   children: [
+  //     {text: '架构',
+  //       children: [
+  //         {text: '项目搭建', link: "/框架/架构/项目搭建/项目搭建"},
+  //         {text: 'DDD', link: "/框架/架构/DDD架构/01-ddd是什么"},
+  //       ]
+  //     },
+  //     {text: 'ORM',
+  //       children: [
+  //         {text: 'Mybatis', link: "/框架/Mybatis/01_MyBatis快速入门"},
+  //       ]
+  //     },
+  //     {text: 'Spring全家桶',
+  //       children: [
+  //         {text: 'Spring', link: "/框架/Spring全家桶/Spring/01_SpringIOC和DI"},
+  //         {text: 'SpringMVC', link: "/框架/Spring全家桶/SpringMVC/01_SpringMVC快速入门及解析"},
+  //         {text: 'SpringBoot', link: "/框架/Spring全家桶/SpringBoot/01_SpringBoot_入门"},
+  //         {text: 'SpringSecurity', link: "/框架/Spring全家桶/SpringSecurity/SpringSecurity"},
+  //         {text: 'SpringCloudAlibaba', link: "/框架/Spring全家桶/SpringCloudAlibaba/Nacos"},
+  //       ]
+  //     },
+  //   ]
+  // },
 ]);
