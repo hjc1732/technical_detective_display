@@ -1,34 +1,77 @@
 import { sidebar } from "vuepress-theme-hope";
 
 export default sidebar({
-  '/部署/':getBuShuBar(),
-  '/实战/商城/':getShopBar(),
-  '/实战/实用工具类/':getUtilsBar(),
-  // '/框架/Spring全家桶/SpringCloudAlibaba/':getSpringCloudAlibabaBar(),
-  // '/框架/Spring全家桶/SpringBoot/':getSpringBootBar(),
-  // '/框架/Spring全家桶/SpringSecurity/':getSpringSecurityBar(),
-  // '/框架/Spring全家桶/SpringMVC/':getSpringMVCBar(),
-  // '/框架/Spring全家桶/Spring/':getSpringBar(),
-  // '/框架/Mybatis/':getMyBatisBar(),
-  // '/前端/vue/':getVueBar(),
-  // '/前端/前端基础/':getQianDuanBar(),
-  // '/java/日志/': getLoggingBar(),
-  // '/java/JUC/': getJUCBar(),
-  // '/java/响应式编程/': getReactorBar(),
-  // '/java/javaWeb/': getJavaWebBar(),
-  // '/java/补充/': getBuChongBar(),
   '/road-map/': getRoadMapBar(),
   '/deploy-maintenance/': getDeployMaintenanceBar(),
   '/projects/': getProjectsBar(),
-  // '/db/jdbc/': getDBJdbcBar(),
-  // '/db/mysql/': getDBMysqlBar(),
-  // '/中间件/自定义Starter/':getStarterBar(),
-  // '/框架/架构/':getJiaGouBar(),
-  '/中间件/':getMiddleBar(),
-  '/实验/':getShiYanBar(),
-  '/设计模式/':getDesign(),
+  '/design-pattern/': getDesignPatternBar(),
 });
 
+
+
+function getDesignPatternBar() {
+  return [
+    {
+      text: '1、设计模式概述',
+      collapsible: true,
+      link:  '概述/概述'
+    },
+    {
+      text: '2、UML图',
+      collapsible: true,
+      link:  '概述/UML'
+    },
+    {
+      text: '3、设计原则',
+      collapsible: true,
+      children: [
+        '设计原则/开闭原则',
+        '设计原则/依赖倒转原则',
+        '设计原则/单一原则',
+        '设计原则/接口隔离原则',
+        '设计原则/迪米特法则',
+        '设计原则/里氏替换原则',
+        '设计原则/合成复用原则',
+      ]
+    },
+    {
+      text: '4、创建型模式',
+      collapsible: true,
+      children: [
+        '创建型模式/单例模式',
+        '创建型模式/工厂模式',
+        '创建型模式/原型模式',
+        '创建型模式/建造者模式',
+        '创建型模式/创建型模式比对',
+      ]
+    },
+    {
+      text: '5、结构型模式',
+      collapsible: true,
+      children: [
+        '结构型模式/代理模式',
+        '结构型模式/适配器模式',
+        '结构型模式/装饰者模式',
+        '结构型模式/桥接模式',
+        '结构型模式/外观模式',
+        {
+          text: '5.6 组合模式',
+          collapsible: true,
+          children: [
+            '结构型模式/组合模式/组合模式实现决策树/组合模式实现规则树引擎',
+          ]
+        }
+      ]
+    },
+    {
+      text: '6、行为型模式',
+      collapsible: true,
+      children: [
+        '行为型模式/策略模式',
+      ]
+    }
+  ];
+}
 
 function getProjectsBar() {
   return [
@@ -40,7 +83,56 @@ function getProjectsBar() {
         'self-develop-component/白名单过滤starter',
         'self-develop-component/自定义starter'
       ],
-    }
+    },
+    {
+      text: '源码分析',
+      collapsible: true,
+      children: [
+        {
+          text: 'Mybatis',
+          collapsible: true,
+          link: 'source-code-analysis/mybatis/mybatis源码解读'
+        },
+        {
+          text: 'Spring',
+          collapsible: true,
+          children: [
+            'source-code-analysis/spring/1、Spring底层核心原理解析',
+            'source-code-analysis/spring/2、手写模拟Spring底层原理',
+            'source-code-analysis/spring/3、Spring之底层架构核心概念解析',
+            'source-code-analysis/spring/4、Spring之Bean生命周期源码解析（上）',
+            'source-code-analysis/spring/5、Spring之Bean生命周期源码解析（下）',
+            'source-code-analysis/spring/6、Spring之依赖注入源码解析（上）',
+            'source-code-analysis/spring/7、Spring之依赖注入源码解析（下）',
+            'source-code-analysis/spring/8、Spring之循环依赖底层源码解析',
+            'source-code-analysis/spring/9、Spring之推断构造方法源码解析',
+            'source-code-analysis/spring/10、Spring之启动过程源码解析',
+            'source-code-analysis/spring/11、Spring之配置类解析源码解析',
+            'source-code-analysis/spring/12、Spring之整合Mybatis底层源码解析',
+            'source-code-analysis/spring/13、Spring之AOP底层源码解析（上）',
+            'source-code-analysis/spring/14、Spring之AOP底层源码解析（下）',
+            'source-code-analysis/spring/15、Spring之事务底层源码解析',
+            'source-code-analysis/spring/16、Spring 6.0及SpringBoot 3.0新特性解析',
+            'source-code-analysis/spring/17、SpringMVC启动与请求处理流程解析',
+            'source-code-analysis/spring/18、SpringMVC重点功能底层源码解析',
+          ],
+        },
+      ],
+    },
+    {
+      text: '算法练习',
+      collapsible: true,
+      children: [
+        'data-structures-algorithms/算法001-社会基尼系数',
+        'data-structures-algorithms/算法002-二进制和位运算',
+        'data-structures-algorithms/算法003-排序算法',
+        'data-structures-algorithms/算法004-对数器',
+        'data-structures-algorithms/算法005-二分法查找-寻找峰值',
+        'data-structures-algorithms/算法006-链表反转',
+        'data-structures-algorithms/算法007-合并升序链表',
+        'data-structures-algorithms/算法008-链表相加',
+      ],
+    },
   ];
 }
 
@@ -51,10 +143,17 @@ function getDeployMaintenanceBar() {
       text: 'ELK',
       collapsible: true,
       link: 'elk/使用docker搭建ELK',
-    }
+    },
+    {
+      text: 'Zabbix',
+      collapsible: true,
+      children: [
+        'zabbix/监控中心Zabbix入门/监控中心Zabbix入门',
+        'zabbix/监控中心Zabbix进阶/监控中心Zabbix进阶'
+      ]
+    },
   ];
 }
-
 function getRoadMapBar() {
   return [
     {
@@ -84,27 +183,61 @@ function getRoadMapBar() {
       ]
     },
     {
-      text: '开发环境(2)',
+      text: '开发环境(6)',
       collapsible: true,
       children:  [
+        {
+          text: 'Git',
+          collapsible: true,
+          link:  'dev/git/笔记',
+        },
+        {
+          text: 'Nginx',
+          collapsible: true,
+          link: 'dev/nginx/Nginx'
+        },
         {
           text: 'Maven',
           collapsible: true,
           children: [
-            'components/maven/01_Maven基础',
-            'components/maven/02_Maven聚合工程',
-            'components/maven/上传maven中央仓库/上传中央仓库'
+            'dev/maven/01_Maven基础',
+            'dev/maven/02_Maven聚合工程',
+            'dev/maven/上传maven中央仓库/上传中央仓库'
           ]
         },
         {
-          text: 'Git',
+          text: 'Docker',
           collapsible: true,
-          link:  'components/git/笔记',
+          children: [
+            'dev/docker/微服务架构演变',
+            'dev/docker/docker',
+            'dev/docker/docker_new',
+            'dev/docker/docker使用个人阿里云镜像源'
+          ]
+        },
+        {
+          text: 'Linux',
+          collapsible: true,
+          children: [
+            'dev/linux/01_Linux_安装',
+            'dev/linux/02_Linux_简介及常用命令',
+            "dev/linux/03_Linux_Vim使用",
+            "dev/linux/04_Linux_软件安装及Java开发环境搭建",
+            "dev/linux/05_Linux_防火墙FirewallD设置",
+          ]
+        },
+        {
+          text: 'Vm',
+          collapsible: true,
+          children: [
+            'dev/vm/linux安装centos',
+            'dev/vm/linux中网络连接的3种模式'
+          ]
         },
       ]
     },
     {
-      text: '开发技术(6)',
+      text: '开发技术(9)',
       collapsible: true,
       children:  [
         {
@@ -175,6 +308,7 @@ function getRoadMapBar() {
           collapsible: true,
           children:[
             'components/es/elastic-search/ElasticSearch',
+            'components/es/elastic-search/Elasticsearch应用',
             'components/es/easy-es/Easy-es',
           ]
         },
@@ -192,13 +326,50 @@ function getRoadMapBar() {
           collapsible: true,
           children: [
             'components/rocket-mq/RocketMQ',
-            'components/rocket-mq/rocketMq/rocketMq深入',
+            'components/rocket-mq/rocketMq深入',
           ]
         },
       ]
     },
     {
-      text: 'Java(7)',
+      text: '技术小点(5)',
+      collapsible: true,
+      children:  [
+        {
+          text: '支付',
+          collapsible: true,
+          children: [
+            {
+              text: '微信支付',
+              collapsible: true,
+              link: "widgets/pay/微信支付",
+            },
+          ]
+        },
+        {
+          text: 'IdWorker',
+          collapsible: true,
+          link: "widgets/id/IdWorker",
+        },
+        {
+          text: '单点登录',
+          collapsible: true,
+          link: "widgets/单点登录/单点登录SSO",
+        },
+        {
+          text: '网页静态化',
+          collapsible: true,
+          link: "widgets/网页静态化技术/网页静态化技术",
+        },
+        {
+          text: 'GoogleColab',
+          collapsible: true,
+          link: "widgets/google-colab/GoogleColab的使用探索",
+        },
+      ]
+    },
+    {
+      text: 'Java(9)',
       collapsible: true,
       children: [
         {
@@ -224,11 +395,11 @@ function getRoadMapBar() {
           text: 'JavaSE高级',
           collapsible: true,
           children: [
-            'base/java/JavaSE高级/01_IO',
-            'base/java/JavaSE高级/02_多线程',
-            'base/java/JavaSE高级/03_网络编程',
-            'base/java/JavaSE高级/04_反射',
-            'base/java/JavaSE高级/05_Java8新特性',
+            'base/java/javaSE高级/01_IO',
+            'base/java/javaSE高级/02_多线程',
+            'base/java/javaSE高级/03_网络编程',
+            'base/java/javaSE高级/04_反射',
+            'base/java/javaSE高级/05_Java8新特性',
           ]
         },
         {
@@ -265,16 +436,16 @@ function getRoadMapBar() {
           ]
         },
         {
-          text: 'JUC',
+          text: 'Juc',
           collapsible: true,
           children: [
-            'base/java/JUC/1、JUC概述',
-            'base/java/JUC/2、Lock接口',
-            'base/java/JUC/3、线程间通讯与线程间定制化通讯',
-            'base/java/JUC/4、集合的线程不安全问题',
-            'base/java/JUC/5、多线程锁',
-            'base/java/JUC/6、callable接口',
-            'base/java/JUC/7、JUC中强大的辅助类',
+            'base/java/juc/1、JUC概述',
+            'base/java/juc/2、Lock接口',
+            'base/java/juc/3、线程间通讯与线程间定制化通讯',
+            'base/java/juc/4、集合的线程不安全问题',
+            'base/java/juc/5、多线程锁',
+            'base/java/juc/6、callable接口',
+            'base/java/juc/7、JUC中强大的辅助类',
           ]
         },
         {
@@ -290,6 +461,16 @@ function getRoadMapBar() {
             'base/java/日志/7_Log4j2',
             'base/java/日志/8_springboot日志实现',
           ]
+        },
+        {
+          text: 'RxJava',
+          collapsible: true,
+          link: 'base/java/rxJava/rxJava',
+        },
+        {
+          text: 'Javassist',
+          collapsible: true,
+          link: 'base/java/javassist/javassist',
         },
       ]
     },
@@ -585,17 +766,6 @@ function getBuShuBar() {
   ]
 }
 
-function getUtilsBar() {
-  return [
-    {
-      text: '实用工具类',
-      collapsible: false,
-      children: [
-        'DocUtils'
-      ]
-    }
-  ]
-}
 
 function getSpringSecurityBar() {
   return [
@@ -934,6 +1104,7 @@ function getReactorBar() {
     }
   ]
 }
+
 const old = {
   "/": [
     "",

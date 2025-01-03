@@ -15,7 +15,7 @@ tagline: 技术并不是我们所追求的目的,而是技术创新世界✨
 actions:
   - text: 开始探索
     icon: signs-post
-    link: ./road-map/base/java/javaSE基础/
+    link: ./road-map/
     type: primary
 
   - text: 个人主页

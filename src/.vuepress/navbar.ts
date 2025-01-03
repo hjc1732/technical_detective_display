@@ -5,12 +5,25 @@ export default navbar([
   // "/portfolio",
   {
     text: '编程路书',
-    link: "/road-map/components/",
+    link: "/road-map/",
     icon: "lightbulb",
     activeMatch: "^/road-map/",
   },
-  {text: '部署|运维', link: "/deploy-maintenance/elk/使用docker搭建ELK"},
-  {text: '项目合集', link: "/projects/self-develop-component/自定义starter"},
+  {
+    text: '设计模式',
+    link: "/design-pattern/概述/概述",
+    activeMatch: "^/design-pattern/",
+  },
+  {
+    text: '部署|运维',
+    link: "/deploy-maintenance/elk/使用docker搭建ELK",
+    activeMatch: "^/deploy-maintenance/",
+  },
+  {
+    text: '项目合集',
+    link: "/projects/self-develop-component/自定义starter",
+    activeMatch: "^/projects/",
+  },
   {text: '更新日志', link: "/更新日志/更新日志.md"},
   // {
   //   text: '基础',
