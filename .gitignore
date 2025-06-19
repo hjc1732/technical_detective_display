@@ -13,3 +13,5 @@
 /src/.vuepress/.temp/shiki/
 /src/.vuepress/.temp/theme-hope/
 /src/.vuepress/dist
+/src/.vuepress/.cache/
+/src/.vuepress/.temp/
