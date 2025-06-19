@@ -23,10 +23,14 @@ actions:
     link: ./portfolio
     type: primary
 
-  - text: 研究生工作管理平台
-    link: https://love.hjcwzx.top/
+  - text: 扳手工具包
+    link: https://wrench.hjcwzx.top/
     icon: lightbulb
     type: primary
+
+  - text: 研究生工作管理平台
+    link: https://love.hjcwzx.top/
+    icon: /assets/icon/blogIcon.png
 
   - text: 笔记站
     link: https://bj.hjcwzx.top/#/
