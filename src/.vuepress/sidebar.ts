@@ -342,7 +342,7 @@ function getRoadMapBar() {
             {
               text: '微信支付',
               collapsible: true,
-              link: "widgets/pay/微信支付",
+              link: "widgets/pay/wechat/微信支付",
             },
           ]
         },
